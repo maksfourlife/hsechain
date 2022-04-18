@@ -1,5 +1,5 @@
 #include <memory>
-#include "obj.hpp"
+#include "obj.hh"
 
 Transaction::Transaction(uint8_t const *_from, uint8_t const *_to, uint64_t amount, uint64_t gas, uint64_t gas_price, std::vector<uint8_t> data)
 {
@@ -21,10 +21,4 @@ std::vector<uint8_t> Transaction::serialize()
     b.insert(b.end(), &this->_gas_price, &this->_gas_price + 8);
     b.insert(b.end(), this->_data.begin(), this->_data.end());
     return b;
-}
-
-Block::Block(Block *parent, std::vector<Transaction> transactions)
-{
-    this->_parent_hash = parent->_hash;
-    this->_transactions = transactions;
 }
