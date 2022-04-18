@@ -5,6 +5,11 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
 
 project(${PROJECT_NAME})
 
-add_executable(${PROJECT_NAME} src/main.cc src/obj.cc)
+add_executable(${PROJECT_NAME}
+    src/main.cc
+    src/obj.cc
+    src/rpc_service.cc
+    src/rpc_client.cc)
+
 target_include_directories(${PROJECT_NAME} PUBLIC /usr/local/include)
 target_link_libraries(${PROJECT_NAME} /usr/local/lib/librpc.a)
