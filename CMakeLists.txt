@@ -13,3 +13,4 @@ add_executable(${PROJECT_NAME}
 
 target_include_directories(${PROJECT_NAME} PUBLIC /usr/local/include)
 target_link_libraries(${PROJECT_NAME} /usr/local/lib/librpc.a)
+target_link_libraries(${PROJECT_NAME} /usr/local/lib/libleveldb.a)
