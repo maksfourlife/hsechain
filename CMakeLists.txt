@@ -7,9 +7,10 @@ project(${PROJECT_NAME})
 
 add_executable(${PROJECT_NAME}
     src/main.cc
-    src/obj.cc
-    src/rpc_service.cc
-    src/rpc_client.cc)
+    src/BlockForks.cc
+    src/Node.cc
+    src/RpcService.cc
+    src/RpcClient.cc)
 
 target_include_directories(${PROJECT_NAME} PUBLIC /usr/local/include)
 target_link_libraries(${PROJECT_NAME} /usr/local/lib/librpc.a)

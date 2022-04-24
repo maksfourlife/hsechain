@@ -1,4 +1,4 @@
-#include "rpc_client.hh"
+#include "RpcClient.hh"
 
 RpcClient::RpcClient(std::string const &addr, uint16_t port)
 {

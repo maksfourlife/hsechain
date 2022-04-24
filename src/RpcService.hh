@@ -1,5 +1,5 @@
 #pragma once
-#include "node.hh"
+#include "Node.hh"
 #include <rpc/server.h>
 
 class RpcService

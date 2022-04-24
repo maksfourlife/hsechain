@@ -82,6 +82,8 @@
         "set": "cpp",
         "future": "cpp",
         "iomanip": "cpp",
-        "thread": "cpp"
-    }
+        "thread": "cpp",
+        "hash_map": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
 }
