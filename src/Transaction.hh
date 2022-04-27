@@ -12,6 +12,5 @@ struct Transaction
     std::vector<uint8_t> data;
     std::vector<uint8_t> signature;
     JS_OBJ(from, to, amount, gas, gas_price, data, signature);
-    std::vector<uint8_t> encode();
-    bool check();
+    std::vector<uint8_t> ser();
 };
